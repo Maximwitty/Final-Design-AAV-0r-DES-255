@@ -1,0 +1,309 @@
+/* We need to put in the text and alter the text color, size, and font.*/
+
+/* Color Palettes: 1. #0773FF, 2. #64FFF6, 3. #000000, 4. #FFF6D2 */
+body {
+    background-color: #0773ff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Libre Baskerville";
+    font-size: 64px;
+    font-weight: bold;
+}
+
+header nav menu#top-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav menu#top-menu li {
+    display: block;
+    list-style: none;
+}
+
+header nav menu#top-menu .profile {
+    margin: 5px 5px 5px 5px;
+}
+
+#top-menu button {
+    border: 0px;
+    background-color: transparent;
+    font-family: "Open Sans";
+    font-weight:bold;
+    font-size: 100%;
+}
+
+#top-menu button a {
+    text-decoration: none;
+    color:black;
+}
+
+header nav menu#top-menu .dropdown-node {
+    display: none;
+    position: absolute;
+}
+
+#top-menu .dropdown:hover .dropdown-node {
+    display: block;
+    position: absolute;
+    background-color: #fff6d2;
+    padding: 10px 10px 10px 10px;
+    font-family: "Open Sans";
+}
+
+#top-menu .dropdown-node li {
+    padding-block: 5%;
+}
+
+#top-menu {
+    margin:0px;
+}
+
+#top-menu .dropdown-node a {
+    text-decoration: none;
+    color:black;
+}
+
+.UpperTitle {
+    display: flex;
+}
+
+.UpperTitle .MainTitle {
+    font-family: "Libre Baskerville";
+    font-size: 400%;
+    color: white;
+    justify-content: center;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.MainTitle a {
+    text-decoration: none;
+    color:white;
+}
+
+.UpperTitle .Logo-Image {
+    height: 30%;
+    width: 30%;
+    padding: 7.5% 7.5% 5% 10%;
+}
+
+.TopNav {
+    text-align: center;
+    background-color: #fff6d2;
+    text-decoration: none;
+    justify-content: center;
+    margin-left: -5%;
+    margin-right: -2.5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+#WelcomeSec {
+    display: flex;
+    justify-content:top;
+    gap: 10%;
+}
+
+#WelcomeSec .PrimaryTitle {
+    width: 50%;
+    font-family: "Libre Baskerville";
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 125%;
+    color: white;
+}
+
+#WelcomeSec .Details {
+    width: 50%;
+    font-family: "Open Sans";
+    font-Size: 22px;
+    font-weight: bold;
+    line-height: 150%;
+    color: white;
+}
+
+#SearchSec {
+    background-color: #fff6d2;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2.5%;
+    padding-left: 10%;
+    padding-bottom: 7.5%;
+}
+
+#SearchSec div {
+    display: flex;
+    align-items: center;
+}
+
+#SearchSec .PrimaryTitle {
+    background-color: #fff6d2;
+    padding-top: 5%;
+}
+
+#SearchSec .SmallInput {
+    background-color: #6AB7FF;
+    padding: 15px 15px 15px;
+    font-size: larger;
+    font-family: "Open Sans";
+    justify-content: center;
+    border-radius: 20px;
+    padding-bottom: 5%;
+    width: 80%;
+}
+
+#SearchSec .SearchButton {
+    background-color: transparent;
+    border: 0;
+    height: 125%;
+    width: 25%;
+}
+
+#SearchSec .SearchButton img {
+    height: 50%;
+    width: 50%;
+}
+
+#TPNSec .TopPicksTitle {
+    font-family: "Libre Baskerville";
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 125%;
+    color: white;
+    text-align: center;
+}
+
+#TPNSec .Article-Name a {
+    font-family: "Open Sans";
+    color: white;
+    font-weight:350;
+    text-decoration: none;
+    padding-left:10%;
+    padding-right:10%;
+    display:block;
+}
+
+#TPNSec .Date-Name {
+    font-family: "Open Sans";
+    color:white;
+    font-weight: bolder;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+#footing {
+    background-color: #FFF6D2;
+    display: flex;
+}
+
+#StatsSec {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#StatsSec div {
+    width:300px;
+    text-align: center;
+}
+
+#StatsSec .statnum {
+    font-family: "Libre Baskerville";
+    font-size: 64px;
+    color:white;
+    margin-bottom: -5%;
+}
+
+#StatsSec .wsen {
+    font-family: "Open Sans";
+    font-size: 24px;
+    color:white;
+    font-weight:lighter;
+}
+
+#CBDSec {
+    background-color: #64FFF6;
+}
+
+#CBDSec h1 {
+    text-align: center;
+    font-family: "Libre Baskerville";
+    font-weight: bold;
+    font-size: 300%;
+}
+
+#CBDSec .imgsection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#CBDSec li {
+    list-style: none;
+}
+
+#CBDSec .pictorial {
+    padding-left: 27.5%;
+    height:50%;
+    width:50%;
+}
+
+#CBDSec .Namenote {
+    text-align: center;
+    padding-left: 1.25%;
+    padding-right: 1.25%;
+    font-family: "Open Sans";
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#CBDSec .imgsectionX1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+#CBDSec .imgsectionX2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+#CBDSec .imgsectionX3 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+#CBDSec .imgsectionX4 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+#CBDSec .imgsectionX5 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+#CBDSec .imgsectionX6 {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+
+#Socials {
+    display: flex;
+}
+
+.imgsocials button {
+    background-color: transparent;
+    border-radius: 100%;
+}
+
+#footing img {
+    width:25%;
+    height:25%;
+}
+
+#footing h2 {
+    font-family: "Libre Baskerville";
+    font-size: 48px;
+    font-weight: bold;
+}
