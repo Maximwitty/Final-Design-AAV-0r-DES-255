@@ -6,6 +6,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* You need this header to be 100% on the width, otherwise it would break the website by introducing horizontal sliders! */ 
+
+header {
+    width: 100%;
 }
 
 h1 {
@@ -18,6 +27,8 @@ header nav menu#top-menu {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    background-color: #FFF6D2;
+    gap: 100px;
 }
 
 header nav menu#top-menu li {
@@ -26,20 +37,31 @@ header nav menu#top-menu li {
 }
 
 header nav menu#top-menu .profile {
-    margin: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 4px;
+    padding-bottom: 100px;
 }
 
 #top-menu button {
     border: 0px;
     background-color: transparent;
     font-family: "Open Sans";
+    color: black;
     font-weight:bold;
     font-size: 100%;
+    transition: color .5s;
+}
+#top-menu button:hover {
+    color:#0773ff;
 }
 
-#top-menu button a {
+#top-menu .dropdown button a {
     text-decoration: none;
     color:black;
+    transition: color .5s;
+}
+
+#top-menu .dropdown button a:hover {
+    color:#0773ff;
 }
 
 header nav menu#top-menu .dropdown-node {
@@ -66,19 +88,36 @@ header nav menu#top-menu .dropdown-node {
 #top-menu .dropdown-node a {
     text-decoration: none;
     color:black;
+    transition: color .5s;
+}
+
+/* Put the transitive property and make it a different color. */
+
+#top-menu .dropdown-node a:hover {
+    color: #0773ff;
+}
+
+#poster-photo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 
 .UpperTitle {
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 25px;
 }
 
 .UpperTitle .MainTitle {
     font-family: "Libre Baskerville";
-    font-size: 400%;
+    font-size: 48px;
     color: white;
-    justify-content: center;
-    padding-bottom: 10%;
-    padding-top: 10%;
+    padding-right: 250px;
 }
 
 .MainTitle a {
@@ -87,26 +126,28 @@ header nav menu#top-menu .dropdown-node {
 }
 
 .UpperTitle .Logo-Image {
-    height: 30%;
-    width: 30%;
-    padding: 7.5% 7.5% 5% 10%;
+    height: 250px;
+    width: 250px;
+    padding-left: 300px;
+    padding-right: 100px;
 }
 
-.TopNav {
+#TopNav {
     text-align: center;
+    width: 100%;
     background-color: #fff6d2;
     text-decoration: none;
     justify-content: center;
-    margin-left: -5%;
-    margin-right: -2.5%;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
 
 #WelcomeSec {
     display: flex;
     justify-content:top;
     gap: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 #WelcomeSec .PrimaryTitle {
@@ -130,15 +171,19 @@ header nav menu#top-menu .dropdown-node {
 #SearchSec {
     background-color: #fff6d2;
     display: flex;
+    justify-content: center;
+    gap: 5px;
     flex-wrap: wrap;
-    padding-top: 2.5%;
+    padding-top: 50px;
     padding-left: 10%;
-    padding-bottom: 7.5%;
+    padding-bottom: 75px;
+    padding-right: 5%;
 }
 
 #SearchSec div {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #SearchSec .PrimaryTitle {
@@ -146,15 +191,20 @@ header nav menu#top-menu .dropdown-node {
     padding-top: 5%;
 }
 
-#SearchSec .SmallInput {
+#SearchSec #SmallInput {
     background-color: #6AB7FF;
     padding: 15px 15px 15px;
     font-size: larger;
     font-family: "Open Sans";
+    font-size: 22px;
     justify-content: center;
+    text-align:center;
     border-radius: 20px;
-    padding-bottom: 5%;
-    width: 80%;
+    margin-left: 100px;
+    padding-bottom: 50px;
+    width: 1000px;
+    height: 10px;
+    border-color: black;
 }
 
 #SearchSec .SearchButton {
@@ -165,8 +215,8 @@ header nav menu#top-menu .dropdown-node {
 }
 
 #SearchSec .SearchButton img {
-    height: 50%;
-    width: 50%;
+    width: 100px;
+    padding-left: 5%;
 }
 
 #TPNSec .TopPicksTitle {
@@ -196,16 +246,13 @@ header nav menu#top-menu .dropdown-node {
     padding-right:10%;
 }
 
-#footing {
-    background-color: #FFF6D2;
-    display: flex;
-}
-
 #StatsSec {
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
     gap: 15px;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
 #StatsSec div {
@@ -229,6 +276,9 @@ header nav menu#top-menu .dropdown-node {
 
 #CBDSec {
     background-color: #64FFF6;
+    width: 2500px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #CBDSec h1 {
@@ -249,9 +299,10 @@ header nav menu#top-menu .dropdown-node {
 }
 
 #CBDSec .pictorial {
-    padding-left: 27.5%;
-    height:50%;
-    width:50%;
+    padding-left: 300px;
+    height:367px;
+    width:387px;
+    object-fit: cover;
 }
 
 #CBDSec .Namenote {
@@ -263,47 +314,248 @@ header nav menu#top-menu .dropdown-node {
     font-weight: bold;
 }
 
-#CBDSec .imgsectionX1 {
+#CBDSec .imgsection .imgsectionX1 {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
 }
-#CBDSec .imgsectionX2 {
+#CBDSec .imgsection .imgsectionX2 {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
 }
-#CBDSec .imgsectionX3 {
+#CBDSec .imgsection .imgsectionX3 {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
 }
-#CBDSec .imgsectionX4 {
+#CBDSec .imgsection .imgsectionX4 {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
 }
-#CBDSec .imgsectionX5 {
+#CBDSec .imgsection .imgsectionX5 {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
 }
-#CBDSec .imgsectionX6 {
+#CBDSec .imgsection .imgsectionX6 {
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
 }
 
-#Socials {
+#Socials h2 {
+    font-family: "Libre Baskerville";
+    font-size: 48px;
+
+    color: white;
+}
+
+.imgsocials {
     display: flex;
+    gap: 100px;
+    padding-bottom: 50px;
 }
 
-.imgsocials button {
+#Button-Node {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.imgsocials img:first-child {
+    width: 500px;
+    height: 500px;
+}
+
+.imgsocials #Facebook {
+    padding-left: 100px;
+    width: 75px;
+    height: 75px;
+}
+
+.imgsocials #Instagram {
+    padding-left: 100px;
+    width: 75px;
+    height: 75px;
+}
+
+.imgsocials #YouTube {
+    padding-left: 100px;
+    width: 75px;
+    height: 75px;
+}
+
+.imgsocials a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
     background-color: transparent;
     border-radius: 100%;
+    width: 250px;
+    text-decoration: none;
 }
 
-#footing img {
-    width:25%;
-    height:25%;
+.imgsocials a span {
+    font-family: "Open Sans";
+    color:white;
+    font-size: 32px;
 }
 
-#footing h2 {
+#footing {
+    background-color: #FFF6D2;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 250px;
+}
+
+#footing #First-Column {
+    display: flex;
+    flex-direction: column;
+}
+
+#footing #First-Column img {
+    padding-left: 100px;
+    padding-top: 50px;
+    width: 250px;
+    height: 250px;
+}
+
+#footing #First-Column h2 {
+    padding-left: 100px;
     font-family: "Libre Baskerville";
     font-size: 48px;
     font-weight: bold;
+}
+
+#footing #First-Column h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+#footing #First-Column h3 {
+    padding-left: 100px;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#footing .Important-Info {
+    display: flex;
+    gap: 125px;
+}
+
+#footing .Important-Info #Second-Column {
+    display: flex;
+    flex-direction: column;
+}
+
+#footing .Important-Info #Second-Column p {
+    color: black;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: bold;
+    transition: color .5s;
+}
+
+#footing .Important-Info #Second-Column p:hover {
+    color:#0773ff;
+}
+
+#footing .Important-Info #Third-Column {
+    display: flex;
+    flex-direction: column;
+}
+
+#footing .Important-Info #Third-Column p {
+    color:black;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: bold;
+    transition: color .5s;
+}
+
+#footing .Important-Info #Second-Column p:hover {
+    color: #0773ff;
+}
+
+#footing .Important-Info #Third-Column p:hover {
+    color:#0773ff;
+}
+
+#footing .Important-Info a {
+    text-decoration: none;
+}
+
+/* This is for the Top News Section of the HTML, this may include new ids for this section here. */
+
+#Cascade {
+    display: flex;
+    flex-direction: column;
+}
+
+#Top-Two {
+    display: flex;
+    flex-direction: column;
+}
+
+#Top-Two .Block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.Block p {
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.Block h4 {
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.Terminal {
+    background-color: #FFF6D2;
+}
+
+#Top-Two .Block#text-noteA {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+#Top-Two .Block#text-noteB {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+#Top-Two #top-news-title {
+    font-family: "Libre Baskerville";
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    align-self: center;
+}
+
+#For-You #for-you-title {
+    font-family: "Libre Baskerville";
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+}
+
+#Podcast #todays-podcast-title {
+    font-family: "Libre Baskerville";
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+}
+
+/* */
+
+@media (max-width: 1024px) {
+    
 }

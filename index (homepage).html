@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Assets/Logo/Primary Logo.png">
+    <link rel="apple-touch-icon" type="image/x-icon" href="Assets/Logo/Primary Logo.png">
     <title>World of Fashion</title>
     <link rel="stylesheet" href="Assets/Fonts/fontsstyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="Functionality/functionality.js"></script>
 </head>
 <body>
     <header>
@@ -15,7 +18,7 @@
         <img class="Logo-Image" src="Assets/Logo/Primary Logo.png">
         <h1 class="MainTitle"><a href="index (homepage).html">World of Fashion</a></h1>
     </div>
-    <div class="TopNav">
+    <div id="TopNav">
         <nav>
             <menu id="top-menu">
                 <li class="dropdown">
@@ -69,7 +72,7 @@
         </nav>
     </div>
     <div>
-        <img>
+        <img id="poster-photo" src="Assets/Images/yQFbJ5fCFECwTEccKxt3KY.jpg">
     </div>
     </header>
     <header id="WelcomeSec">
@@ -79,7 +82,7 @@
     <section id="SearchSec">
         <h2 class="SearchTitle">Search for a State</h2>
         <div>
-            <input class="SmallInput" type="text">
+            <input id="SmallInput" type="text">
             <button class="SearchButton">
                 <a href="searchresults.html"><img src="Assets/Images/Search Symbol.png" alt="searchbutton.png" border="0"></a>
             </button>
@@ -126,53 +129,71 @@
         <div class="Sectitle">
             <h1>Our Community’s Best Designs</h1>
         </div>
-        <section class="imgsection">
-        <div class="imgsectionX1">
-            <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
-            <li><p class="Namenote">[Place Name Here]</p></li>
-        </div>
-        <div class="imgsectionX2">
-            <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
-            <li><p class="Namenote">[Place Name Here]</p></li>
-        </div>
-        <div class="imgsectionX3">
-            <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
-            <li><p class="Namenote">[Place Name Here]</p></li>
-        </div>
-        <div class="imgsectionX4">
-            <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
-            <li><p class="Namenote">[Place Name Here]</p></li>
-        </div>
-        <div class="imgsectionX5">
-            <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
-            <li><p class="Namenote">[Place Name Here]</p></li>
-        </div>
-        <div class="imgsectionX6">
-            <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
-            <li><p class="Namenote">[Place Name Here]</p></li>
-        </div>
-        </section>
+        <article class="imgsection">
+            <div class="imgsectionX1">
+                <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
+                <li><p class="Namenote">[Place Name Here]</p></li>
+            </div>
+            <div class="imgsectionX2">
+                <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
+                <li><p class="Namenote">[Place Name Here]</p></li>
+            </div>
+            <div class="imgsectionX3">
+                <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
+                <li><p class="Namenote">[Place Name Here]</p></li>
+            </div>
+            <div class="imgsectionX4">
+                <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
+                <li><p class="Namenote">[Place Name Here]</p></li>
+            </div>
+            <div class="imgsectionX5">
+                <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
+                <li><p class="Namenote">[Place Name Here]</p></li>
+            </div>
+            <div class="imgsectionX6">
+                <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
+                <li><p class="Namenote">[Place Name Here]</p></li>
+            </div>
+        </article>
     </section>
-    <section class="Socials">
+    <section id="Socials">
         <h2>Keep up with our updates on Social Media!</h2>
         <div class="imgsocials">
             <img src="" alt="Recently Posted Images">
-            <button><img src="Assets/Social-Media-Logos/A 1.png"></button>
-            <button><img id="Instagram" src="Assets/Social-Media-Logos/images.png"></button>
+            <div id="Button-Node">
+            <a href=""><img id="Facebook" src="Assets/Social-Media-Logos/facebook-logo-svgrepo-com.svg"><span>Facebook</span></a>
+            <br>
+            <a href=""><img id="Instagram" src="Assets/Social-Media-Logos/instagram-svgrepo-com.svg"><span>Instagram</span></a>
+            <br>
+            <a href=""><img id="YouTube" src="Assets/Social-Media-Logos/youtube-logo-svgrepo-com.svg"><span>YouTube</span></a>
+            </div>
         </div>
     </section>
-</body>
 <footer>
     <nav id="footing">
-        <img src="Assets/Logo/Primary Logo.png" alt="">
-        <h2>World of Fashion</h2>
-        
-        <div>
-
+        <section id="First-Column">
+            <img src="Assets/Logo/Primary Logo.png" alt="">
+            <h2><a href="index (homepage).html">World of Fashion</a></h2>
+            <h3>Copyright ©️ 2024 World of Fashion Broadcasting Inc.</h3>
+            <br>
+        </section>
+        <section class="Important-Info">
+        <div id="Second-Column">
+            <a href=""><p>Photo Commissions</p></a>
+            <a href=""><p>Contact Us</p></a>
+            <a href=""><p>Your Profile</p></a>
+            <a href=""><p>Terms of Use</p></a>
+            <a href=""><p>Directory</p></a>
         </div>
-        <div>
-
+        <div id="Third-Column">
+            <a href=""><p>View History Settings</p></a>
+            <a href=""><p>Privacy Policy</p></a>
+            <a href=""><p>Content Filter Settings</p></a>
+            <a href=""><p>Cookies Policy</p></a>
+            <a href=""><p>Accessibility Controls</p></a>
         </div>
+        </section>
     </nav>
 </footer>
+</body>
 </html>
