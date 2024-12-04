@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <script src="Functionality/functionality.js"></script>
 </head>
 <body>
     <header>
@@ -71,7 +70,7 @@
             </menu>
         </nav>
     </div>
-    <div>
+    <div class="fadeOnLoad">
         <img id="poster-photo" src="Assets/Images/yQFbJ5fCFECwTEccKxt3KY.jpg">
     </div>
     </header>
@@ -81,12 +80,12 @@
     </header>
     <section id="SearchSec">
         <h2 class="SearchTitle">Search for a State</h2>
-        <div>
+        <search id="formation">
             <input id="SmallInput" type="text">
-            <button class="SearchButton">
-                <a href="searchresults.html"><img src="Assets/Images/Search Symbol.png" alt="searchbutton.png" border="0"></a>
+            <button onclick="searchQuery()" class="SearchButton">
+                <a id="SearchTransfer"><img src="Assets/Images/Search Symbol.png" alt="searchbutton.png" href="" border="0"></a>
             </button>
-        </div>
+        </search>
     </section>
     <section id="TPNSec">
         <h1 class="TopPicksTitle">Top Picks</h1>
@@ -104,23 +103,23 @@
         </div>
     </section>
     <section id="StatsSec">
-        <div>
+        <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="0">
             <h1 class="statnum">94%</h1>
             <h4 class="wsen">of designers trust us to build new skills, forecast future trends, and more</h4>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="0">
             <h1 class="statnum">7 of 10</h1>
             <h4 class="wsen">fashion stylists suggest our news network after reading </h4>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="1200" data-aos-duration="0">
             <h1 class="statnum">3,250+</h1>
             <h4 class="wsen">members of our community that help empower and lift other members up</h4>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="1800" data-aos-duration="0">
             <h1 class="statnum">6,725+</h1>
             <h4 class="wsen">lessons that help out with public speaking, showcasing your designs and themes, learning new patterns and clothing styles, and more!</h4>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="2400" data-aos-duration="0">
             <h1 class="statnum">99%</h1>
             <h4 class="wsen">of designers have improved their designs after viewing 15 minutes of workshop videos</h4>
         </div>
@@ -131,41 +130,41 @@
         </div>
         <article class="imgsection">
             <div class="imgsectionX1">
-                <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
+                <li><a class="pictorial" href=""><img src="" alt="[Place Image Here]"></a></li>
                 <li><p class="Namenote">[Place Name Here]</p></li>
             </div>
             <div class="imgsectionX2">
-                <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
+                <li><a class="pictorial" href=""><img src="" alt="[Place Image Here]"></a></li>
                 <li><p class="Namenote">[Place Name Here]</p></li>
             </div>
             <div class="imgsectionX3">
-                <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
+                <li><a class="pictorial" href=""><img src="" alt="[Place Image Here]"></a></li>
                 <li><p class="Namenote">[Place Name Here]</p></li>
             </div>
             <div class="imgsectionX4">
-                <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
+                <li><a class="pictorial" href=""><img src="" alt="[Place Image Here]"></a></li>
                 <li><p class="Namenote">[Place Name Here]</p></li>
             </div>
             <div class="imgsectionX5">
-                <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
+                <li><a class="pictorial" href=""><img src="" alt="[Place Image Here]"></a></li>
                 <li><p class="Namenote">[Place Name Here]</p></li>
             </div>
             <div class="imgsectionX6">
-                <li><a class="pictorial"><img src="" alt="[Place Image Here]"></a></li>
+                <li><a class="pictorial" href=""><img src="" alt="[Place Image Here]"></a></li>
                 <li><p class="Namenote">[Place Name Here]</p></li>
             </div>
         </article>
     </section>
     <section id="Socials">
-        <h2>Keep up with our updates on Social Media!</h2>
+        <h2 data-aos="fade-right">Keep up with our updates on Social Media!</h2>
         <div class="imgsocials">
-            <img src="" alt="Recently Posted Images">
+            <img data-aos="fade-right" src="" alt="Recently Posted Images">
             <div id="Button-Node">
-            <a href=""><img id="Facebook" src="Assets/Social-Media-Logos/facebook-logo-svgrepo-com.svg"><span>Facebook</span></a>
+            <a data-aos="fade-right" href="https://www.facebook.com/?_rdr"><img id="Facebook" src="Assets/Social-Media-Logos/facebook-logo-svgrepo-com.svg"><span>Facebook</span></a>
             <br>
-            <a href=""><img id="Instagram" src="Assets/Social-Media-Logos/instagram-svgrepo-com.svg"><span>Instagram</span></a>
+            <a data-aos="fade-right" href="https://www.instagram.com/"><img id="Instagram" src="Assets/Social-Media-Logos/instagram-svgrepo-com.svg"><span>Instagram</span></a>
             <br>
-            <a href=""><img id="YouTube" src="Assets/Social-Media-Logos/youtube-logo-svgrepo-com.svg"><span>YouTube</span></a>
+            <a data-aos="fade-right" href="https://www.youtube.com/"><img id="YouTube" src="Assets/Social-Media-Logos/youtube-logo-svgrepo-com.svg"><span>YouTube</span></a>
             </div>
         </div>
     </section>
@@ -195,5 +194,18 @@
         </section>
     </nav>
 </footer>
+
+    <!-- Splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- This is for the Jquery and script with javascript section.-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="Functionality/functionality.js"></script>
+    <applet code="Passkey.class" width="200" height="200"></applet>
 </body>
 </html>

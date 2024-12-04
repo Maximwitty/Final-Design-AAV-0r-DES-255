@@ -15,7 +15,7 @@
             <img class="Logo-Image" src="Assets/Logo/Primary Logo.png">
             <h1 class="MainTitle"><a href="index (homepage).html">World of Fashion</a></h1>
         </div>
-        <div class="TopNav">
+        <div id="TopNav">
             <nav>
                 <menu id="top-menu">
                     <li class="dropdown">
@@ -69,8 +69,21 @@
             </nav>
         </div>
     </header>
-    <section id="Welcome">
-        <h1></h1>
+    <div id="preloadedImage">
+        <img class="fadeOnLoadII" src="" alt="">
+    </div>
+    <header id="Welcome">
+        <h1 class="PrimeTitle">Welcome To Designer's Workshop</h1>
+        <h3 class="PrimeDescription">The Designer’s Workshop contains all that you need to create a successful collection of designs! With over 6,725 lessons to choose from, you are destined to design better and gain real world skills!</h3>
+    </header>
+    <section id="SelectSec">
+        <h2 class="scripts">Filter for a Lesson Theme</h2>
+        <select id="choose" name="theme">
+            <option id="options" value="Choose a Lesson Theme!">Choose a Lesson Theme!</option>
+        </select>
+    </section>
+    <section>
+
     </section>
     <footer>
         <nav id="footing">
@@ -80,6 +93,7 @@
                 <h3>Copyright ©️ 2024 World of Fashion Broadcasting Inc.</h3>
                 <br>
             </div>
+            <section class="Important-Info">
             <div id="Second-Column">
                 <a href=""><p>Photo Commissions</p></a>
                 <a href=""><p>Contact Us</p></a>
@@ -94,7 +108,21 @@
                 <a href=""><p>Cookies Policy</p></a>
                 <a href=""><p>Accessibility Controls</p></a>
             </div>
+            </section>
         </nav>
     </footer>
+
+    <!-- Splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- This is for the Jquery and script with javascript section.-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="Functionality/functionality.js"></script>
+    <applet code="Passkey.class" width="200" height="200"></applet>
 </body>
 </html>

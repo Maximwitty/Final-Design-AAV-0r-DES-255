@@ -1,4 +1,4 @@
-/* We need to put in the text and alter the text color, size, and font.*/
+/* We need to put in the text and then alter the text color, size, and font.*/
 
 /* Color Palettes: 1. #0773FF, 2. #64FFF6, 3. #000000, 4. #FFF6D2 */
 body {
@@ -16,6 +16,8 @@ body {
 header {
     width: 100%;
 }
+
+/* These two above CSS selectors are the general width of the desktop. */
 
 h1 {
     font-family: "Libre Baskerville";
@@ -65,16 +67,22 @@ header nav menu#top-menu .profile {
 }
 
 header nav menu#top-menu .dropdown-node {
-    display: none;
+    display: block;
     position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+    background-color:#FFF6D2;
+    padding: 10px;
+    font-family: "Open Sans";
 }
 
 #top-menu .dropdown:hover .dropdown-node {
     display: block;
     position: absolute;
     background-color: #fff6d2;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     font-family: "Open Sans";
+    opacity: 1;
 }
 
 #top-menu .dropdown-node li {
@@ -82,7 +90,7 @@ header nav menu#top-menu .dropdown-node {
 }
 
 #top-menu {
-    margin:0px;
+    margin: 0px;
 }
 
 #top-menu .dropdown-node a {
@@ -101,7 +109,7 @@ header nav menu#top-menu .dropdown-node {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 500px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -171,19 +179,21 @@ header nav menu#top-menu .dropdown-node {
 #SearchSec {
     background-color: #fff6d2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 5px;
+    width: 100%;
     flex-wrap: wrap;
+    text-align: center;
     padding-top: 50px;
-    padding-left: 10%;
     padding-bottom: 75px;
-    padding-right: 5%;
 }
 
-#SearchSec div {
+#SearchSec #formation {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
+    gap: 25px;
 }
 
 #SearchSec .PrimaryTitle {
@@ -198,16 +208,17 @@ header nav menu#top-menu .dropdown-node {
     font-family: "Open Sans";
     font-size: 22px;
     justify-content: center;
-    text-align:center;
+    text-align: justify;
+    align-items: center;
     border-radius: 20px;
-    margin-left: 100px;
     padding-bottom: 50px;
-    width: 1000px;
+    width: 900px;
     height: 10px;
     border-color: black;
 }
 
 #SearchSec .SearchButton {
+    cursor: pointer;
     background-color: transparent;
     border: 0;
     height: 125%;
@@ -247,12 +258,19 @@ header nav menu#top-menu .dropdown-node {
 }
 
 #StatsSec {
+    visibility:visible;
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
     gap: 15px;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 175px;
+    padding-right: 175px;
+    margin-bottom: 100px;
+}
+
+.fadeOnLoad {
+    opacity: 0;
+    max-width: 100%;
 }
 
 #StatsSec div {
@@ -276,9 +294,10 @@ header nav menu#top-menu .dropdown-node {
 
 #CBDSec {
     background-color: #64FFF6;
-    width: 2500px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 50px;
 }
 
 #CBDSec h1 {
@@ -299,10 +318,11 @@ header nav menu#top-menu .dropdown-node {
 }
 
 #CBDSec .pictorial {
-    padding-left: 300px;
     height:367px;
     width:387px;
     object-fit: cover;
+    text-decoration: none;
+    color: black;
 }
 
 #CBDSec .Namenote {
@@ -410,6 +430,7 @@ header nav menu#top-menu .dropdown-node {
 #footing #First-Column {
     display: flex;
     flex-direction: column;
+    padding-right: 50px;
 }
 
 #footing #First-Column img {
@@ -446,6 +467,7 @@ header nav menu#top-menu .dropdown-node {
 #footing .Important-Info #Second-Column {
     display: flex;
     flex-direction: column;
+    padding-right: 50px;
 }
 
 #footing .Important-Info #Second-Column p {
@@ -463,6 +485,7 @@ header nav menu#top-menu .dropdown-node {
 #footing .Important-Info #Third-Column {
     display: flex;
     flex-direction: column;
+    padding-right: 50px;
 }
 
 #footing .Important-Info #Third-Column p {
@@ -485,7 +508,7 @@ header nav menu#top-menu .dropdown-node {
     text-decoration: none;
 }
 
-/* This is for the Top News Section of the HTML, this may include new ids for this section here. */
+/* This is for the Top News Section of the HTML, this may include new ids for this section here. There's also a bunch of others to look out that affect the appearance of this page. */
 
 #Cascade {
     display: flex;
@@ -502,24 +525,22 @@ header nav menu#top-menu .dropdown-node {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .Block p {
     font-family: "Open Sans";
     font-size: 22px;
     font-weight: bold;
+    padding: 10px;
 }
 
 .Block h4 {
     font-family: "Open Sans";
     font-size: 24px;
-    font-weight: 100;
-}
-
-.Terminal {
-    background-color: #FFF6D2;
+    font-weight: 250;
+    padding: 10px;
 }
 
 #Top-Two .Block#text-noteA {
@@ -532,30 +553,313 @@ header nav menu#top-menu .dropdown-node {
     grid-row: 1 / span 1;
 }
 
-#Top-Two #top-news-title {
+#Top-Two .top-news-title {
     font-family: "Libre Baskerville";
     font-size: 64px;
     font-weight: bold;
     color: white;
-    align-self: center;
+    text-align: center;
 }
 
-#For-You #for-you-title {
+.Terminal {
+    background-color: #FFF6D2;
+}
+
+#Bottom-Four .Chroma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#Bottom-Four .Chroma img {
+    width: 387px;
+    height: 250px;
+    object-fit: cover;
+}
+
+#Bottom-Four .Chroma h4 {
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 250;
+}
+
+#Bottom-Four .Chroma p {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#Bottom-Four .Chroma #row-one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#Bottom-Four .Chroma #row-one article {
+    background-color: #FFF6D2;
+    padding: 50px 10px 50px;
+    width: 70%;
+}
+
+#Bottom-Four .Chroma #row-two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#Bottom-Four .Chroma #row-two article {
+    background-color: #FFF6D2;
+    padding: 50px 10px 50px;
+    width: 70%;
+}
+
+#Bottom-Four .Chroma #row-three {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#Bottom-Four .Chroma #row-three article {
+    background-color: #FFF6D2;
+    padding: 50px 10px 50px;
+    width: 70%;
+}
+
+#Bottom-Four .Chroma #row-four {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#Bottom-Four .Chroma #row-four article {
+    background-color: #FFF6D2;
+    padding: 50px 10px 50px;
+    width: 70%;
+}
+
+#For-You {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+    
+#For-You .for-you-title {
     font-family: "Libre Baskerville";
     font-size: 64px;
     font-weight: bold;
     color: white;
+    text-align: center;
 }
 
-#Podcast #todays-podcast-title {
+#For-You #top-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#For-You #top-row img {
+    width: 590px;
+    height: 500px;
+}
+
+#For-You h3 {
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: 500;
+    padding: 10px 25px 10px;
+}
+
+#For-You h4 {
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 250;
+    padding: 10px 25px 10px;
+}
+
+#For-You p {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 25px 10px;
+}
+
+#For-You #top-row article:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#For-You #top-row article:nth-child(2) {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#For-You #bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#For-You #bottom-grid img {
+    width: 387px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#For-You #bottom-grid article {
+    height: 175px;
+    width: 100%;
+}
+
+#For-You #bottom-grid article:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#For-You #bottom-grid article:nth-child(2) {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#For-You #bottom-grid article:nth-child(3) {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#For-You #bottom-grid article:nth-child(4) {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#For-You #bottom-grid article:nth-child(5) {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#For-You #bottom-grid article:nth-child(6) {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#Podcast .todays-podcast-title {
     font-family: "Libre Baskerville";
     font-size: 64px;
     font-weight: bold;
     color: white;
+    text-align: center;
 }
 
-/* */
+.more-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 10px;
+    padding-right: 75px;
+    padding-top: 75px;
+}
+
+.more-info a {
+    text-decoration: none;
+}
+
+.more-info p {
+    font-family: "Open Sans";
+    font-size: 24px;
+    color: black;
+}
+
+.context {
+    background-color: #FFF6D2;
+    padding-bottom: 25px;
+}
+
+.context a {
+    text-decoration: none;
+}
+
+/* This part contains a lot of things for the designer's workshop page of the website, including many videos and other things associated with this like buttons. */
+
+#preloadedImage {
+    display: flex;
+    width: 100%;
+    height: 395px;
+}
+
+.fadeOnLoadII {
+    opacity: 0;
+    max-width: 100%;
+}
+
+#Welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#Welcome .PrimeTitle {
+    font-family: "Libre Baskerville";
+    font-weight: bold;
+    font-size: 64px;
+    color: white;
+}
+
+#Welcome .PrimeDescription {
+    font-family: "Open Sans";
+    font-weight: 250;
+    font-size: 32px;
+    color: white;
+}
+
+#SelectSec {
+    background-color: #FFF6D2;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+}
+
+#SelectSec .scripts {
+    font-family: "Libre Baskerville";
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#SelectSec select {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    width: 895px;
+    height: 100px;
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: 250;
+}
+
+#SelectSec #default {
+    color: gray;
+}
+
+/* This is for the mobile version of the website. */
 
 @media (max-width: 1024px) {
-    
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header {
+        width: 100%;
+    }
 }

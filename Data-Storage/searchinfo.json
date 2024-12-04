@@ -1,0 +1,12 @@
+{
+    "Search":[
+        {"Query":"Fashion"},
+        {"Query":"Menswear"},
+        {"Query":"Womenswear"},
+        {"Query":"Trends"},
+        {"Query":"Forecasting"},
+        {"Query":"Departments"},
+        {"Query":"Design"},
+        {"Query":""}
+    ]
+}
