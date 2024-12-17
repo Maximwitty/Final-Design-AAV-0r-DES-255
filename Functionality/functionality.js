@@ -47,267 +47,534 @@ $(document).ready(function() {
 
 // As for the section that can filter out, we need to have a different section come in for when they choose a certain subject.
 
-document.addEventListener("DOMContentLoaded", function() {
-    let dropdown = document.getElementById("choose");
-    let section1 = document.getElementById("secI");
-    let section2 = document.getElementById("secII");
-    let section3 = document.getElementById("secIII");
-    let section4 = document.getElementById("secIV");
-    let section5 = document.getElementById("secV");
-    let section6 = document.getElementById("secVI");
-    let section7 = document.getElementById("secVII");
-    let section8 = document.getElementById("secVIII");
-    let section9 = document.getElementById("secIX");
-    let section10 = document.getElementById("secX");
-    let section11 = document.getElementById("secXI");
-    let section12 = document.getElementById("secXII");
-    let section13 = document.getElementById("secXIII");
-    let section14 = document.getElementById("secXIV");
-    let section15 = document.getElementById("secXV");
+let dropdown = document.getElementById("choose");
+let condition = dropdown.value;
 
-dropdown.addEventListener("change", function() {
-    let selectedValue = dropdown.value;
-
-    if(selectedValue === "ElementI") {
-        section1.style.display = "flex";
-        section2.style.display = "none";
-        section3.style.display = "none";
-        section4.style.display = "none";
-        section5.style.display = "none";
-        section6.style.display = "none";
-        section7.style.display = "none";
-        section8.style.display = "none";
-        section9.style.display = "none";
-        section10.style.display = "none";
-        section11.style.display = "none";
-        section12.style.display = "none";
-        section13.style.display = "none";
-        section14.style.display = "none";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementII") {
-        section1.style.display = "none";
-        section2.style.display = "flex";
-        section3.style.display = "none";
-        section4.style.display = "none";
-        section5.style.display = "none";
-        section6.style.display = "none";
-        section7.style.display = "none";
-        section8.style.display = "none";
-        section9.style.display = "none";
-        section10.style.display = "none";
-        section11.style.display = "none";
-        section12.style.display = "none";
-        section13.style.display = "none";
-        section14.style.display = "none";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementIII") {
-        section1.style.display = "none";
-        section2.style.display = "none";
-        section3.style.display = "flex";
-        section4.style.display = "none";
-        section5.style.display = "none";
-        section6.style.display = "none";
-        section7.style.display = "none";
-        section8.style.display = "none";
-        section9.style.display = "none";
-        section10.style.display = "none";
-        section11.style.display = "none";
-        section12.style.display = "none";
-        section13.style.display = "none";
-        section14.style.display = "none";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementIV") {
-        section1.style.display = "none";
-        section2.style.display = "none";
-        section3.style.display = "none";
-        section4.style.display = "flex";
-        section5.style.display = "none";
-        section6.style.display = "none";
-        section7.style.display = "none";
-        section8.style.display = "none";
-        section9.style.display = "none";
-        section10.style.display = "none";
-        section11.style.display = "none";
-        section12.style.display = "none";
-        section13.style.display = "none";
-        section14.style.display = "none";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementV") {
-        section1.style.display = "none";
-        section2.style.display = "none";
-        section3.style.display = "none";
-        section4.style.display = "none";
-        section5.style.display = "flex";
-        section6.style.display = "none";
-        section7.style.display = "none";
-        section8.style.display = "none";
-        section9.style.display = "none";
-        section10.style.display = "none";
-        section11.style.display = "none";
-        section12.style.display = "none";
-        section13.style.display = "none";
-        section14.style.display = "none";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementVI") {
-        section1.style.display = "none";
-        section2.style.display = "none";
-        section3.style.display = "none";
-        section4.style.display = "none";
-        section5.style.display = "none";
-        section6.style.display = "flex";
-        section7.style.display = "none";
-        section8.style.display = "none";
-        section9.style.display = "none";
-        section10.style.display = "none";
-        section11.style.display = "none";
-        section12.style.display = "none";
-        section13.style.display = "none";
-        section14.style.display = "none";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementVII") {
-        section1.style.display = "none";
-        section2.style.display = "none";
-        section3.style.display = "none";
-        section4.style.display = "none";
-        section5.style.display = "none";
-        section6.style.display = "none";
-        section7.style.display = "flex";
-        section8.style.display = "none";
-        section9.style.display = "none";
-        section10.style.display = "none";
-        section11.style.display = "none";
-        section12.style.display = "none";
-        section13.style.display = "none";
-        section14.style.display = "none";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementVIII") {
-        section1.style.display = "none";
-        section2.style.display = "none";
-        section3.style.display = "none";
-        section4.style.display = "none";
-        section5.style.display = "none";
-        section6.style.display = "none";
-        section7.style.display = "none";
-        section8.style.display = "flex";
-        section9.style.display = "none";
-        section10.style.display = "none";
-        section11.style.display = "none";
-        section12.style.display = "none";
-        section13.style.display = "none";
-        section14.style.display = "none";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementIX") {
-        section1.style.display = "none";
-        section2.style.display = "none";
-        section3.style.display = "none";
-        section4.style.display = "none";
-        section5.style.display = "none";
-        section6.style.display = "none";
-        section7.style.display = "none";
-        section8.style.display = "none";
-        section9.style.display = "flex";
-        section10.style.display = "none";
-        section11.style.display = "none";
-        section12.style.display = "none";
-        section13.style.display = "none";
-        section14.style.display = "none";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementX") {
-        section1.style.display = "none";
-        section2.style.display = "none";
-        section3.style.display = "none";
-        section4.style.display = "none";
-        section5.style.display = "none";
-        section6.style.display = "none";
-        section7.style.display = "none";
-        section8.style.display = "none";
-        section9.style.display = "none";
-        section10.style.display = "flex";
-        section11.style.display = "none";
-        section12.style.display = "none";
-        section13.style.display = "none";
-        section14.style.display = "none";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementXI") {
-        section1.style.display = "none";
-        section2.style.display = "none";
-        section3.style.display = "none";
-        section4.style.display = "none";
-        section5.style.display = "none";
-        section6.style.display = "none";
-        section7.style.display = "none";
-        section8.style.display = "none";
-        section9.style.display = "none";
-        section10.style.display = "none";
-        section11.style.display = "flex";
-        section12.style.display = "none";
-        section13.style.display = "none";
-        section14.style.display = "none";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementXII") {
-        section1.style.display = "none";
-        section2.style.display = "none";
-        section3.style.display = "none";
-        section4.style.display = "none";
-        section5.style.display = "none";
-        section6.style.display = "none";
-        section7.style.display = "none";
-        section8.style.display = "none";
-        section9.style.display = "none";
-        section10.style.display = "none";
-        section11.style.display = "none";
-        section12.style.display = "flex";
-        section13.style.display = "none";
-        section14.style.display = "none";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementXIII") {
-        section1.style.display = "none";
-        section2.style.display = "none";
-        section3.style.display = "none";
-        section4.style.display = "none";
-        section5.style.display = "none";
-        section6.style.display = "none";
-        section7.style.display = "none";
-        section8.style.display = "none";
-        section9.style.display = "none";
-        section10.style.display = "none";
-        section11.style.display = "none";
-        section12.style.display = "none";
-        section13.style.display = "flex";
-        section14.style.display = "none";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementXIV") {
-        section1.style.display = "none";
-        section2.style.display = "none";
-        section3.style.display = "none";
-        section4.style.display = "none";
-        section5.style.display = "none";
-        section6.style.display = "none";
-        section7.style.display = "none";
-        section8.style.display = "none";
-        section9.style.display = "none";
-        section10.style.display = "none";
-        section11.style.display = "none";
-        section12.style.display = "none";
-        section13.style.display = "none";
-        section14.style.display = "flex";
-        section15.style.display = "none";
-    } else if(selectedValue === "ElementXV") {
-        section1.style.display = "none";
-        section2.style.display = "none";
-        section3.style.display = "none";
-        section4.style.display = "none";
-        section5.style.display = "none";
-        section6.style.display = "none";
-        section7.style.display = "none";
-        section8.style.display = "none";
-        section9.style.display = "none";
-        section10.style.display = "none";
-        section11.style.display = "none";
-        section12.style.display = "none";
-        section13.style.display = "none";
-        section14.style.display = "none";
-        section15.style.display = "flex";
+function DropTheme() {
+    var I = document.getElementById("secI");
+    var II = document.getElementById("secII");
+    var III = document.getElementById("secIII");
+    var IV = document.getElementById("secIV");
+    var V = document.getElementById("secV");
+    var VI = document.getElementById("secVI");
+    var VII = document.getElementById("secVII");
+    var VIII = document.getElementById("secVIII");
+    var IX = document.getElementById("secIX");
+    var X = document.getElementById("secX");
+    var XI = document.getElementById("secXI");
+    var XII = document.getElementById("secXII");
+    var XIII = document.getElementById("secXIII");
+    var XIV = document.getElementById("secXIV");
+    var XV = document.getElementById("secXV");
+    
+    if(condition === "ElementI") {
+        if(I) {
+            I.classList.add("visible");
+            I.classList.remove("hidden");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
     }
-});
-});
+    if(condition === "ElementII") {
+        if(II) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("visible");
+            II.classList.remove("hidden");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
+    }
+    if(condition === "ElementIII") {
+        if(III) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("visible");
+            III.classList.remove("hidden");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
+    }
+    if(condition === "ElementIV") {
+        if(IV) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("visible");
+            IV.classList.remove("hidden");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
+    }
+    if(condition === "ElementV") {
+        if(V) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("visible");
+            V.classList.remove("hidden");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
+    }
+    if(condition === "ElementVI") {
+        if(VI) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("visible");
+            VI.classList.remove("hidden");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
+    }
+    if(condition === "ElementVII") {
+        if(VII) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("visible");
+            VII.classList.remove("hidden");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
+    }
+    if(condition === "ElementVIII") {
+        if(VIII) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("visible");
+            VIII.classList.remove("hidden");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
+    }
+    if(condition === "ElementIX") {
+        if(IX) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("visible");
+            IX.classList.remove("hidden");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
+    }
+    if(condition === "ElementX") {
+        if(X) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("visible");
+            X.classList.remove("hidden");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
+    }
+    if(condition === "ElementXI") {
+        if(XI) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("visible");
+            XI.classList.remove("hidden");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
+    }
+    if(condition === "ElementXII") {
+        if(XII) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("visible");
+            XII.classList.remove("hidden");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
+    }
+    if(condition === "ElementXIII") {
+        if(XIII) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("visible");
+            XIII.classList.remove("hidden");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
+    }
+    if(condition === "ElementXIV") {
+        if(XIV) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("visible");
+            XIV.classList.remove("hidden");
+            XV.classList.add("hidden");
+            XV.classList.remove("visible");
+        }
+    }
+    if(condition === "ElementXV") {
+        if(XV) {
+            I.classList.add("hidden");
+            I.classList.remove("visible");
+            II.classList.add("hidden");
+            II.classList.remove("visible");
+            III.classList.add("hidden");
+            III.classList.remove("visible");
+            IV.classList.add("hidden");
+            IV.classList.remove("visible");
+            V.classList.add("hidden");
+            V.classList.remove("visible");
+            VI.classList.add("hidden");
+            VI.classList.remove("visible");
+            VII.classList.add("hidden");
+            VII.classList.remove("visible");
+            VIII.classList.add("hidden");
+            VIII.classList.remove("visible");
+            IX.classList.add("hidden");
+            IX.classList.remove("visible");
+            X.classList.add("hidden");
+            X.classList.remove("visible");
+            XI.classList.add("hidden");
+            XI.classList.remove("visible");
+            XII.classList.add("hidden");
+            XII.classList.remove("visible");
+            XIII.classList.add("hidden");
+            XIII.classList.remove("visible");
+            XIV.classList.add("hidden");
+            XIV.classList.remove("visible");
+            XV.classList.add("visible");
+            XV.classList.remove("hidden");
+        }
+    }
+}
