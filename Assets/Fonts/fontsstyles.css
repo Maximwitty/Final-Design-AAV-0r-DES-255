@@ -1104,6 +1104,27 @@ header nav menu#top-menu .dropdown-node {
     padding-bottom: 100px;
 }
 
+/* Text and Image Adjustments */
+
+.INT img {
+    width: 387px;
+    height: 315px;
+    object-fit: cover;
+}
+
+.INT h4 {
+    font-family: "Open Sans";
+    font-size: 24px;
+    color: white;
+}
+
+.INT p {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
 /* Default Section when loaded */
 
 #sec1 {
@@ -1150,26 +1171,6 @@ header nav menu#top-menu .dropdown-node {
 #sec1 section:nth-child(6) {
     grid-column: 3;
     grid-row: 2;
-}
-
-/* Text and Image Adjustments */
-
-.INT img {
-    width: 387px;
-    height: 315px;
-}
-
-.INT h4 {
-    font-family: "Open Sans";
-    font-size: 24px;
-    color: white;
-}
-
-.INT p {
-    font-family: "Open Sans";
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
 }
 
 /* Other sections based on the value of the dropdown section. */

@@ -48,22 +48,22 @@ $(document).ready(function() {
 // As for the section that can filter out, we need to have a different section come in for when they choose a certain subject.
 
 document.addEventListener("DOMContentLoaded", function() {
-    let dropdown = document.getElementById("choose").style.display;
-    let section1 = document.getElementById("secI").style.display;
-    let section2 = document.getElementById("secII").style.display;
-    let section3 = document.getElementById("secIII").style.display;
-    let section4 = document.getElementById("secIV").style.display;
-    let section5 = document.getElementById("secV").style.display;
-    let section6 = document.getElementById("secVI").style.display;
-    let section7 = document.getElementById("secVII").style.display;
-    let section8 = document.getElementById("secVIII").style.display;
-    let section9 = document.getElementById("secIX").style.display;
-    let section10 = document.getElementById("secX").style.display;
-    let section11 = document.getElementById("secXI").style.display;
-    let section12 = document.getElementById("secXII").style.display;
-    let section13 = document.getElementById("secXIII").style.display;
-    let section14 = document.getElementById("secXIV").style.display;
-    let section15 = document.getElementById("secXV").style.display;
+    let dropdown = document.getElementById("choose");
+    let section1 = document.getElementById("secI");
+    let section2 = document.getElementById("secII");
+    let section3 = document.getElementById("secIII");
+    let section4 = document.getElementById("secIV");
+    let section5 = document.getElementById("secV");
+    let section6 = document.getElementById("secVI");
+    let section7 = document.getElementById("secVII");
+    let section8 = document.getElementById("secVIII");
+    let section9 = document.getElementById("secIX");
+    let section10 = document.getElementById("secX");
+    let section11 = document.getElementById("secXI");
+    let section12 = document.getElementById("secXII");
+    let section13 = document.getElementById("secXIII");
+    let section14 = document.getElementById("secXIV");
+    let section15 = document.getElementById("secXV");
 
 dropdown.addEventListener("change", function() {
     let selectedValue = dropdown.value;
