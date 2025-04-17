@@ -1171,7 +1171,7 @@ header nav menu#top-menu .dropdown-node {
 /* Other sections based on the value of the dropdown section. */
 
 .hidden {
-    display: none;
+    display: "";
 }
 
 .visible {
