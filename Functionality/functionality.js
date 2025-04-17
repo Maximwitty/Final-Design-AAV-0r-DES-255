@@ -68,7 +68,6 @@ function DropTheme() {
     var XV = document.getElementById("secXV");
     
     if(condition === "ElementI") {
-        if(I) {
             I.classList.add("visible");
             I.classList.remove("hidden");
             II.classList.add("hidden");
@@ -99,10 +98,8 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementII") {
-        if(II) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("visible");
@@ -133,10 +130,8 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementIII") {
-        if(III) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("hidden");
@@ -167,10 +162,8 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementIV") {
-        if(IV) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("hidden");
@@ -201,10 +194,8 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementV") {
-        if(V) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("hidden");
@@ -235,10 +226,8 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementVI") {
-        if(VI) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("hidden");
@@ -269,10 +258,8 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementVII") {
-        if(VII) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("hidden");
@@ -303,10 +290,8 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementVIII") {
-        if(VIII) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("hidden");
@@ -337,10 +322,8 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementIX") {
-        if(IX) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("hidden");
@@ -371,10 +354,8 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementX") {
-        if(X) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("hidden");
@@ -405,10 +386,8 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementXI") {
-        if(XI) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("hidden");
@@ -439,10 +418,8 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementXII") {
-        if(XII) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("hidden");
@@ -473,10 +450,8 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementXIII") {
-        if(XIII) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("hidden");
@@ -507,10 +482,8 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementXIV") {
-        if(XIV) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("hidden");
@@ -541,10 +514,8 @@ function DropTheme() {
             XIV.classList.remove("hidden");
             XV.classList.add("hidden");
             XV.classList.remove("visible");
-        }
     }
     if(condition === "ElementXV") {
-        if(XV) {
             I.classList.add("hidden");
             I.classList.remove("visible");
             II.classList.add("hidden");
@@ -575,6 +546,5 @@ function DropTheme() {
             XIV.classList.remove("visible");
             XV.classList.add("visible");
             XV.classList.remove("hidden");
-        }
     }
 }
